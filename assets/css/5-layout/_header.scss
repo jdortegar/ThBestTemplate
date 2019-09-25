@@ -1,0 +1,14 @@
+.navbar {
+  &.navbar-ligth {
+    background: #fff;
+  }
+  a {
+    color: #000;
+    text-transform: uppercase;
+    &:hover,
+    .active {
+      color: #1b9df8;
+      font-weight: 700;
+    }
+  }
+}

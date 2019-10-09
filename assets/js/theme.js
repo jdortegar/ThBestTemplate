@@ -127,5 +127,15 @@ $(document).ready(function() {
     );
   });
 
+  // $('.most-popular-list > .popular-link').each(function() {
+  //   var _this = this;
+  //   $(_this).on('mouseover', function() {
+  //     console.log('over');
+  //     $(_this)
+  //       .parent('li')
+  //       .toggle('active');
+  //   });
+  // });
+
   // End Script
 });

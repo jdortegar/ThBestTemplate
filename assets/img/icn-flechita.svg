@@ -3,6 +3,12 @@
     <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
     <title>flechita</title>
     <desc>Created with Sketch.</desc>
+    <style>
+    #Path-2,
+    #Path-3{
+        color:red
+    }
+    </style>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="BTN-3" transform="translate(-81.000000, -6.000000)" stroke="#1B9DF8">
             <g transform="translate(8.000000, 2.000000)" id="flechita">

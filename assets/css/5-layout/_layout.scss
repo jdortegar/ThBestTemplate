@@ -13,6 +13,24 @@ html {
   color: #1b9df8;
 }
 
+// Links
+
+a {
+  color: #1b9df8;
+  cursor: pointer;
+  &:hover {
+    color: #167fc8 !important;
+    text-decoration: none;
+    #BTN-3 {
+      stroke: #167fc8 !important;
+    }
+  }
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
 // Buttons
 
 .btn-best-success {
@@ -21,14 +39,22 @@ html {
   color: #fff;
   border-radius: 22px;
   padding: 0.5rem 1rem;
+  &:hover {
+    background: #68c82f;
+    color: #fff !important;
+  }
 }
 
 .btn-best-info {
   background: #1b9df8;
   font-weight: 500;
-  color: #fff;
+  color: #fff !important;
   border-radius: 22px;
   padding: 0.5rem 1rem;
+  &:hover {
+    background: #167fc8;
+    color: #fff !important;
+  }
 }
 
 // Banner
@@ -102,8 +128,12 @@ html {
       .right-1 {
         .banner-text {
           text-align: right;
-          max-width: 75px;
+          max-width: 80px;
           font-weight: 200;
+          cursor: pointer;
+          &:hover {
+            font-weight: 300;
+          }
         }
       }
     }
@@ -135,7 +165,7 @@ html {
       border: 1px solid #f0f0f0;
       border-radius: 3px;
       background-color: #ffffff;
-
+      box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
       margin: 50px 20px;
       padding: 25px 15px 10px;
       text-align: center;
@@ -229,12 +259,16 @@ html {
         .list-header {
           padding: 10px 30px;
         }
+        .people-choise,
+        .ribbon {
+          display: none;
+        }
       }
       .people-choise {
         position: absolute;
         background: #1b9df8;
         color: #fff;
-        padding: 2px 20px;
+        padding: 2px 45px;
       }
       .ribbon {
         position: absolute;
@@ -308,10 +342,13 @@ html {
         }
       }
       .features-section {
+        text-align: center;
         ul {
           text-align: left;
           list-style: none;
           padding: 0;
+          margin: auto;
+          display: inline-block;
           li {
             color: #676767;
             margin-bottom: 5px;
@@ -355,16 +392,9 @@ html {
         // max-width: 275px;
       }
       .site-preview {
-        img {
-          max-width: 170px;
-        }
         display: flex;
         flex-flow: column;
         text-align: left;
-      }
-      .excerpt {
-      }
-      .templates {
       }
     }
   }
@@ -435,11 +465,22 @@ html {
 
 .categories {
   padding: 50px 0;
+  .row {
+    justify-content: center;
+    .col-lg-4 {
+      max-width: 30%;
+    }
+  }
   .category-box {
-    border: 2px solid #1b9df8;
+    border: 3px solid #1b9df8;
     border-radius: 3px;
     background-color: #ffffff;
     padding: 10px 15px;
+    color: #000;
+    display: block;
+    &:hover g {
+      fill: #167fc8;
+    }
     img {
       margin-right: 10px;
     }
@@ -492,6 +533,7 @@ html {
   padding: 0 40px 20px;
   border-top: 1px solid #1b9df8;
   font-size: 0.9em;
+  margin-top: 100px;
 
   .copyright {
     max-width: 290px;

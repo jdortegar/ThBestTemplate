@@ -127,15 +127,23 @@ $(document).ready(function() {
     );
   });
 
-  // $('.most-popular-list > .popular-link').each(function() {
-  //   var _this = this;
-  //   $(_this).on('mouseover', function() {
-  //     console.log('over');
-  //     $(_this)
-  //       .parent('li')
-  //       .toggle('active');
-  //   });
-  // });
+  $('.most-popular-list li')
+    .not('.most-popular-list li:first-child')
+    .each(function() {
+      var _this = this;
+      $(_this).hover(
+        function() {
+          console.log('over');
+          $(_this).addClass('active');
+          $('.most-popular-list li:first-child').removeClass('active');
+        },
+        function() {
+          console.log('over');
+          $(_this).removeClass('active');
+          $('.most-popular-list li:first-child').addClass('active');
+        }
+      );
+    });
 
   // End Script
 });

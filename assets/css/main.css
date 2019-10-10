@@ -9457,10 +9457,12 @@ a {
     -webkit-box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
     margin: 50px 20px;
-    padding: 25px 15px 10px;
     text-align: center;
     position: relative;
     width: 28%; }
+    .most-popular .most-popular-list li a {
+      padding: 40px 15px 10px;
+      display: block; }
     .most-popular .most-popular-list li img {
       max-width: 100px; }
     .most-popular .most-popular-list li .score-container {
@@ -9487,45 +9489,46 @@ a {
       margin: 0; }
     .most-popular .most-popular-list li .btn {
       color: #1b9df8; }
-    .most-popular .most-popular-list li.active {
-      padding: 50px 15px 20px;
-      -webkit-box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
-              box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1); }
-      .most-popular .most-popular-list li.active .score-container {
+    .most-popular .most-popular-list li .score-container-first {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: #fff; }
+      .most-popular .most-popular-list li .score-container-first:before {
+        content: '00';
+        background: url(/assets/img/img-firstplace-back.svg) no-repeat;
         position: absolute;
-        top: -2px;
+        top: 0px;
         left: -2px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        color: #fff; }
-        .most-popular .most-popular-list li.active .score-container:before {
-          content: '00';
-          background: url(/assets/img/img-firstplace-back.svg) no-repeat;
-          position: absolute;
-          top: 0px;
-          left: -2px;
-          font-size: 1.2em;
-          line-height: 1.5;
-          z-index: -1;
-          padding: 0 10px 0 15px; }
-        .most-popular .most-popular-list li.active .score-container .left {
-          font-size: 1.2em;
-          font-weight: 700;
-          padding: 2px 10px 2px 15px;
-          background: url(/assets/img/img-firstplace.svg) no-repeat;
-          background-size: cover; }
-        .most-popular .most-popular-list li.active .score-container .right {
-          padding: 2px 15px 2px 10px;
-          background: url(/assets/img/img-firstplace.svg) no-repeat right;
-          background-size: cover;
-          font-size: 0.8em;
-          display: -webkit-inline-box;
-          display: -ms-inline-flexbox;
-          display: inline-flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; }
+        font-size: 1.2em;
+        line-height: 1.5;
+        z-index: -1;
+        padding: 0 10px 0 15px; }
+      .most-popular .most-popular-list li .score-container-first .left {
+        font-size: 1.2em;
+        font-weight: 700;
+        padding: 2px 10px 2px 15px;
+        background: url(/assets/img/img-firstplace.svg) no-repeat;
+        background-size: cover; }
+      .most-popular .most-popular-list li .score-container-first .right {
+        padding: 2px 15px 2px 10px;
+        background: url(/assets/img/img-firstplace.svg) no-repeat right;
+        background-size: cover;
+        font-size: 0.8em;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+    .most-popular .most-popular-list li.active {
+      -webkit-box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.25);
+              box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.25); }
+      .most-popular .most-popular-list li.active a {
+        padding: 40px 15px 30px; }
 
 .most-popular-choice .most-popular-choice-list {
   padding: 0;

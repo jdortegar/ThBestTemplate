@@ -69,6 +69,7 @@ a {
   }
 
   background: linear-gradient(139.15deg, #3179b7 0%, #1b9df8 100%);
+  margin-bottom: 0;
 }
 
 .banner-section {
@@ -177,6 +178,9 @@ a {
 
     a {
       color: #1b9df8;
+      p {
+        color: #000;
+      }
     }
 
     li {
@@ -274,11 +278,13 @@ a {
 }
 
 .most-popular-choice {
+  margin-bottom: 80px;
   .most-popular-choice-list {
     padding: 0;
     list-style: none;
 
-    >li {
+    > li {
+      cursor: pointer;
       border: 1px solid #f0f0f0;
       border-radius: 3px;
       background-color: #ffffff;
@@ -359,25 +365,25 @@ a {
           -webkit-user-select: none;
         }
 
-        .rating-stars ul>li.star {
+        .rating-stars ul > li.star {
           display: inline-block;
         }
 
         /* Idle State of the stars */
-        .rating-stars ul>li.star>i.fa {
+        .rating-stars ul > li.star > i.fa {
           font-size: 1em;
           /* Change the size of the stars */
           color: #ccc;
           /* Color on idle state */
         }
 
-        /* Hover state of the stars */
-        .rating-stars ul>li.star.hover>i.fa {
-          color: #ff912c;
-        }
+        // /* Hover state of the stars */
+        // .rating-stars ul > li.star.hover > i.fa {
+        //   color: #ff912c;
+        // }
 
         /* Selected state of the stars */
-        .rating-stars ul>li.star.selected>i.fa {
+        .rating-stars ul > li.star.selected > i.fa {
           color: #ffcc36;
         }
 
@@ -551,10 +557,13 @@ a {
     padding: 10px 15px;
     color: #000;
     display: block;
+    g {
+      fill: #000;
+    }
 
     &:hover {
       border: 3px solid #1b9df8;
-
+      padding: 9px 14px;
       g {
         fill: #167fc8;
       }
@@ -680,6 +689,24 @@ a {
   }
 }
 
+.Policy {
+  background: gray;
+  .Policy-wrapper {
+    display: flex;
+    justify-content: start;
+    div {
+      color: #bababa;
+      font-size: 0.9em;
+      cursor: pointer;
+      margin: 0 30px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 // Mobile
 
 @media (max-width: 970px) {
@@ -764,7 +791,6 @@ a {
 @media (max-width: 720px) {
   .list-header {
     .row {
-
       .logo-section,
       .features-section,
       .third-column {

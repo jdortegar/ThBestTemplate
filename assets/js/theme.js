@@ -74,7 +74,6 @@ $(document).ready(function() {
     $(_this)
       .find('.expand-triger')
       .on('click', function() {
-        console.log('click');
         $(_this)
           .find('.list-body')
           .toggle();

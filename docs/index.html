@@ -52,13 +52,13 @@
       <section class="banner-section">
         <div class="left-section">
           <h1 class="display-4">Best Website <br />
-            <hr style="width: 70px; background-color:#fff;display: inline-block;margin-left: -30px;" /> Builders
+            <hr class="banner-line" /> Builders
             <strong>2019</strong>
           </h1>
           <div class="banner-text mb-5"><img src="assets/img/img-bandera.png">
             <p>USA COMPARISON</p>
           </div>
-          <ul class="features">
+          <ul class="features hide-mobile">
             <li><span class="img-container"><img src="assets/img/icn-stunning.svg" alt=""></span>Stunning Templates
             </li>
             <li><span class="img-container"><img src="assets/img/icn-mobile.svg" alt=""></span>Mobile Optimized
@@ -72,11 +72,6 @@
         <div class="right-section">
           <div class="header">
             <img src="assets/img/img-computer.png" alt="">
-            <div class="right-1">
-              <div class="banner-text mb-3" data-toggle="modal" data-target="#exampleModal">We receive referral fees
-              </div>
-              <div class="banner-text" data-toggle="modal" data-target="#exampleModal">Advertiser Disclosure</div>
-            </div>
           </div>
           <div class="bottom">
             <h5>Create your own website now!</h5><a href="https://es.wix.com/" target="_blank"
@@ -87,7 +82,16 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="Policy ">
+    <section class="container">
+      <div class="Policy-wrapper">
+        <div data-toggle="modal" data-target="#exampleModal">We receive referral fees</div>
+        <div data-toggle="modal" data-target="#exampleModal">Advertiser Disclosure</div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container hide-mobile">
     <section class="most-popular">
       <ul class="most-popular-list">
         <li class="active">
@@ -182,27 +186,34 @@
           <div class="list-header container">
             <div class="row">
               <div class="logo-section col-lg-3 col-md-12">
-                <img src="assets/img/logo-wix.png">
-                <div class="stars-section">
-                  <div class='rating-stars text-center'>
-                    <ul id='stars'>
-                      <li class='star' title='Poor' data-value='1'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Fair' data-value='2'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Good' data-value='3'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Excellent' data-value='4'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='WOW!!!' data-value='5'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                    </ul>
+                <div class="logo-section-inner">
+                  <img src="assets/img/logo-wix.png">
+                  <div class="stars-section">
+                    <div class='rating-stars text-center'>
+                      <ul id='stars'>
+                        <li class='star selected' title='Poor' data-value='1'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star selected' title='Fair' data-value='2'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star ' title='Good' data-value='3'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Excellent' data-value='4'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='WOW!!!' data-value='5'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
+                </div>
+                <div class="score-section hide-desktop">
+                  <h1 class="display-3">9.8</h1>
+                  <p>Outstanding</p>
+                  <a href="/review">Read Review</a>
                 </div>
               </div>
               <div class="features-section col-lg-5 col-md-6">
@@ -213,7 +224,7 @@
                 </ul>
               </div>
               <div class="third-column col-lg-4 col-md-6">
-                <div class="score-section">
+                <div class="score-section hide-mobile">
                   <h1 class="display-3">9.8</h1>
                   <p>Outstanding</p>
                   <a href="/review">Read Review</a>
@@ -271,27 +282,34 @@
           <div class="list-header container">
             <div class="row">
               <div class="logo-section col-lg-3 col-md-12">
-                <img src="assets/img/logo-wix.png">
-                <div class="stars-section">
-                  <div class='rating-stars text-center'>
-                    <ul id='stars'>
-                      <li class='star' title='Poor' data-value='1'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Fair' data-value='2'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Good' data-value='3'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Excellent' data-value='4'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='WOW!!!' data-value='5'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                    </ul>
+                <div class="logo-section-inner">
+                  <img src="assets/img/logo-wix.png">
+                  <div class="stars-section">
+                    <div class='rating-stars text-center'>
+                      <ul id='stars'>
+                        <li class='star selected' title='Poor' data-value='1'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star selected' title='Fair' data-value='2'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star ' title='Good' data-value='3'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Excellent' data-value='4'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='WOW!!!' data-value='5'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
+                </div>
+                <div class="score-section hide-desktop">
+                  <h1 class="display-3">9.8</h1>
+                  <p>Outstanding</p>
+                  <a href="/review">Read Review</a>
                 </div>
               </div>
               <div class="features-section col-lg-5 col-md-6">
@@ -302,7 +320,7 @@
                 </ul>
               </div>
               <div class="third-column col-lg-4 col-md-6">
-                <div class="score-section">
+                <div class="score-section hide-mobile">
                   <h1 class="display-3">9.8</h1>
                   <p>Outstanding</p>
                   <a href="/review">Read Review</a>
@@ -360,27 +378,34 @@
           <div class="list-header container">
             <div class="row">
               <div class="logo-section col-lg-3 col-md-12">
-                <img src="assets/img/logo-wix.png">
-                <div class="stars-section">
-                  <div class='rating-stars text-center'>
-                    <ul id='stars'>
-                      <li class='star' title='Poor' data-value='1'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Fair' data-value='2'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Good' data-value='3'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Excellent' data-value='4'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='WOW!!!' data-value='5'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                    </ul>
+                <div class="logo-section-inner">
+                  <img src="assets/img/logo-wix.png">
+                  <div class="stars-section">
+                    <div class='rating-stars text-center'>
+                      <ul id='stars'>
+                        <li class='star selected' title='Poor' data-value='1'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star selected' title='Fair' data-value='2'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star ' title='Good' data-value='3'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Excellent' data-value='4'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='WOW!!!' data-value='5'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
+                </div>
+                <div class="score-section hide-desktop">
+                  <h1 class="display-3">9.8</h1>
+                  <p>Outstanding</p>
+                  <a href="/review">Read Review</a>
                 </div>
               </div>
               <div class="features-section col-lg-5 col-md-6">
@@ -391,7 +416,7 @@
                 </ul>
               </div>
               <div class="third-column col-lg-4 col-md-6">
-                <div class="score-section">
+                <div class="score-section hide-mobile">
                   <h1 class="display-3">9.8</h1>
                   <p>Outstanding</p>
                   <a href="/review">Read Review</a>
@@ -449,27 +474,34 @@
           <div class="list-header container">
             <div class="row">
               <div class="logo-section col-lg-3 col-md-12">
-                <img src="assets/img/logo-wix.png">
-                <div class="stars-section">
-                  <div class='rating-stars text-center'>
-                    <ul id='stars'>
-                      <li class='star' title='Poor' data-value='1'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Fair' data-value='2'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Good' data-value='3'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='Excellent' data-value='4'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                      <li class='star' title='WOW!!!' data-value='5'>
-                        <i class='fa fa-star fa-fw'></i>
-                      </li>
-                    </ul>
+                <div class="logo-section-inner">
+                  <img src="assets/img/logo-wix.png">
+                  <div class="stars-section">
+                    <div class='rating-stars text-center'>
+                      <ul id='stars'>
+                        <li class='star selected' title='Poor' data-value='1'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star selected' title='Fair' data-value='2'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star ' title='Good' data-value='3'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Excellent' data-value='4'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='WOW!!!' data-value='5'>
+                          <i class='fa fa-star fa-fw'></i>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
+                </div>
+                <div class="score-section hide-desktop">
+                  <h1 class="display-3">9.8</h1>
+                  <p>Outstanding</p>
+                  <a href="/review">Read Review</a>
                 </div>
               </div>
               <div class="features-section col-lg-5 col-md-6">
@@ -480,7 +512,7 @@
                 </ul>
               </div>
               <div class="third-column col-lg-4 col-md-6">
-                <div class="score-section">
+                <div class="score-section hide-mobile">
                   <h1 class="display-3">9.8</h1>
                   <p>Outstanding</p>
                   <a href="/review">Read Review</a>
@@ -535,7 +567,7 @@
     </section>
   </div>
 
-  <div class="jumbotron">
+  <div class="jumbotron hide-mobile">
     <div class="container">
       <section class="web-review">
 
@@ -591,19 +623,19 @@
       <h4 class="text-center mb-4 font-bold">Categories</h4>
       <div class="row mb-4">
 
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-online.svg" alt="" class="svg">
             Online store & Ecommerce
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-blogs.svg" alt="" class="svg">
             Blogs & Forums
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-landing.svg" alt="" class="svg">
             Landing pages
@@ -611,19 +643,19 @@
         </div>
       </div>
       <div class="row mb-4">
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-community.svg" alt="" class="svg">
             Community & Education
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-sports.svg" alt="" class="svg">
             Sports & Recreation
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-fashion.svg" alt="" class="svg">
             Fashion & Style
@@ -631,19 +663,19 @@
         </div>
       </div>
       <div class="row mb-4">
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-travel.svg" alt="" class="svg">
             Travel & Tourism
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-health.svg" alt="" class="svg">
             Health & Welness
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-portfolio.svg" alt="" class="svg">
             Portfolio & CV
@@ -651,19 +683,19 @@
         </div>
       </div>
       <div class="row mb-4">
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-photo.svg" alt="" class="svg">
             Photography & Video
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-design.svg" alt="" class="svg">
             Design
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-restaurants.svg" alt="" class="svg">
             Restaurants & Food
@@ -671,19 +703,19 @@
         </div>
       </div>
       <div class="row mb-4">
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-creativity.svg" alt="" class="svg">
             Creativity & Arts
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-business.svg" alt="" class="svg">
             Business
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <a href="https://es.wix.com" target="_blank" class="category-box">
             <img src="assets/img/icn-beauty.svg" alt="" class="svg">
             Beauty & Hair

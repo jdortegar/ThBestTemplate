@@ -2,47 +2,47 @@ $(document).ready(function() {
   // Get started!
 
   /* 1. Visualizing things on Hover - See next part for action on click */
-  $('#stars li')
-    .on('mouseover', function() {
-      var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+  // $('#stars li')
+  //   .on('mouseover', function() {
+  //     var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
 
-      // Now highlight all the stars that's not after the current hovered star
-      $(this)
-        .parent()
-        .children('li.star')
-        .each(function(e) {
-          if (e < onStar) {
-            $(this).addClass('hover');
-          } else {
-            $(this).removeClass('hover');
-          }
-        });
-    })
-    .on('mouseout', function() {
-      $(this)
-        .parent()
-        .children('li.star')
-        .each(function(e) {
-          $(this).removeClass('hover');
-        });
-    });
+  //     // Now highlight all the stars that's not after the current hovered star
+  //     $(this)
+  //       .parent()
+  //       .children('li.star')
+  //       .each(function(e) {
+  //         if (e < onStar) {
+  //           $(this).addClass('hover');
+  //         } else {
+  //           $(this).removeClass('hover');
+  //         }
+  //       });
+  //   })
+  //   .on('mouseout', function() {
+  //     $(this)
+  //       .parent()
+  //       .children('li.star')
+  //       .each(function(e) {
+  //         $(this).removeClass('hover');
+  //       });
+  //   });
 
   /* 2. Action to perform on click */
-  $('#stars li').on('click', function(e) {
-    e.stopPropagation();
-    var onStar = parseInt($(this).data('value'), 10); // The star currently selected
-    var stars = $(this)
-      .parent()
-      .children('li.star');
+  // $('#stars li').on('click', function(e) {
+  //   e.stopPropagation();
+  //   var onStar = parseInt($(this).data('value'), 10); // The star currently selected
+  //   var stars = $(this)
+  //     .parent()
+  //     .children('li.star');
 
-    for (i = 0; i < stars.length; i++) {
-      $(stars[i]).removeClass('selected');
-    }
+  //   for (i = 0; i < stars.length; i++) {
+  //     $(stars[i]).removeClass('selected');
+  //   }
 
-    for (i = 0; i < onStar; i++) {
-      $(stars[i]).addClass('selected');
-    }
-  });
+  //   for (i = 0; i < onStar; i++) {
+  //     $(stars[i]).addClass('selected');
+  //   }
+  // });
 
   //Get the button:
   var mybutton = $('#myUpBtn');
@@ -74,7 +74,6 @@ $(document).ready(function() {
     $(_this)
       .find('.expand-triger')
       .on('click', function() {
-        console.log('click');
         $(_this)
           .find('.list-body')
           .toggle();
@@ -144,6 +143,25 @@ $(document).ready(function() {
         }
       );
     });
+
+  $('.most-popular-choice-list li').each(function() {
+    var _this = this;
+    $(this).click(function(e) {
+      window.open(
+        $(_this)
+          .find('.link-section a')
+          .attr('href'),
+        '_blank'
+      );
+      $(this)
+        .find('a')
+        .click(function(e) {
+          e.stopPropagation();
+        });
+
+      return false;
+    });
+  });
 
   // End Script
 });

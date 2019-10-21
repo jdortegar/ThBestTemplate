@@ -177,7 +177,7 @@ a {
 // Most Popular
 
 .most-popular {
-  min-height: 290px;
+
 
   .most-popular-list {
     padding: 0;
@@ -186,14 +186,8 @@ a {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-
-    a {
-      color: #1b9df8;
-
-      p {
-        color: #000;
-      }
-    }
+    min-height: 190px;
+    min-height: 290px;
 
     li {
       border: 1px solid #f0f0f0;
@@ -207,8 +201,14 @@ a {
       width: 28%;
 
       a {
+        color: #1b9df8;
         padding: 40px 15px 10px;
-        display: block
+        display: block;
+        transition: padding .15s;
+
+        p {
+          color: #000;
+        }
       }
 
       img {
@@ -563,7 +563,6 @@ a {
 }
 
 .categories {
-  padding: 50px 0;
 
   .row {
     justify-content: center;
@@ -648,6 +647,7 @@ a {
 }
 
 .text-section {
+  padding-top: 50px;
   font-size: 0.9em;
 }
 
